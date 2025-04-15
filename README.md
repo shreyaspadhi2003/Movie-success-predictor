@@ -49,22 +49,19 @@ movie-success-predictor/
 
 1. **Clone the Repository**
 
-git clone https://github.com/shreyaspadhi2003/Movie-success-predictor.git
+- git clone https://github.com/shreyaspadhi2003/Movie-success-predictor.git
 
-cd movie-success-predictor
+- cd movie-success-predictor
 
 2. Install Dependencies
 
-bash
-Copy
-pip install -r requirements.txt
-Required packages include: pandas, numpy, scikit-learn, xgboost, shap, streamlit, matplotlib, joblib
+- pip install -r requirements.txt
+- Required packages include: pandas, numpy, scikit-learn, xgboost, shap, streamlit, matplotlib, joblib
 
 3. Add Data Files
+- Place your titles.csv and credits.csv inside the data/ folder.
+- Train the Models
 
-Place your titles.csv and credits.csv inside the data/ folder.
-
-Train the Models
 Run the training script to generate all models and evaluation outputs:
 
 python train.py
@@ -84,45 +81,44 @@ streamlit run app.py
 
 You can input:
 
-. One or more actors
+- One or more actors
 
-. One or more directors
+- One or more directors
 
-. Multiple genres
+- Multiple genres
 
-. Runtime and release year
+- Runtime and release year
 
 Then view:
 
-. IMDb score prediction
+- IMDb score prediction
 
-. Hit/Flop classification
+- Hit/Flop classification
 
-. SHAP-based feature influence plots
+- SHAP-based feature influence plots
 
-. Actor/director performance averages
+- Actor/director performance averages
 
 Evaluation Outputs:
 After training, the following files will be generated in /models:
 
-confusion_matrix.png: Visual confusion matrix of classification performance
+- confusion_matrix.png: Visual confusion matrix of classification performance
 
-performance_metrics.txt: Detailed classification and regression metrics
+- performance_metrics.txt: Detailed classification and regression metrics
 
-Pickled model files for both XGBoost and Random Forest
+- Pickled model files for both XGBoost and Random Forest
 
 Future Improvements:
-Add trailer/video-based sentiment features
-
-Incorporate release season and production budget
-
-Deploy app with Docker or on cloud (e.g., Streamlit Cloud / Heroku)
-
-Implement user authentication and saved prediction history
+- Add trailer/video-based sentiment features
+- Incorporate release season and production budget
+- Deploy app with Docker or on cloud (e.g., Streamlit Cloud / Heroku)
+- Implement user authentication and saved prediction history
 
 Contact
 For questions or collaborations, reach out at:
+
 shreyaspadhi2003@gmail.com
+
 https://www.linkedin.com/in/shreyas-padhi-01100b221/
 
 License
